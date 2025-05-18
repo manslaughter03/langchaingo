@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tmc/langchaingo/embeddings"
+	"github.com/manslaughter03/langchaingo/embeddings"
 )
 
 type RedisIndexAlgorithm string

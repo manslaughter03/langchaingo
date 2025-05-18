@@ -1,12 +1,12 @@
-module github.com/tmc/langchaingo/examples/mistral-embedding-example
+module github.com/manslaughter03/langchaingo/examples/mistral-embedding-example
 
 go 1.22.0
 
 toolchain go1.22.1
 
-require github.com/tmc/langchaingo v0.1.13-pre.1
+require github.com/manslaughter03/langchaingo v0.1.13-pre.1
 
-replace github.com/tmc/langchaingo => ../../
+replace github.com/manslaughter03/langchaingo => ../../
 
 require (
 	github.com/dlclark/regexp2 v1.10.0 // indirect

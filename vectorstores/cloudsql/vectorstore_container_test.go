@@ -4,20 +4,21 @@ package cloudsql_test
 import (
 	"context"
 	"fmt"
-	"github.com/jackc/pgx/v5/pgxpool"
-	"github.com/stretchr/testify/require"
-	"github.com/testcontainers/testcontainers-go"
-	tcpostgres "github.com/testcontainers/testcontainers-go/modules/postgres"
-	"github.com/testcontainers/testcontainers-go/wait"
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/util/cloudsqlutil"
-	"github.com/tmc/langchaingo/vectorstores/cloudsql"
 	"os"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/jackc/pgx/v5/pgxpool"
+	"github.com/manslaughter03/langchaingo/embeddings"
+	"github.com/manslaughter03/langchaingo/llms/openai"
+	"github.com/manslaughter03/langchaingo/schema"
+	"github.com/manslaughter03/langchaingo/util/cloudsqlutil"
+	"github.com/manslaughter03/langchaingo/vectorstores/cloudsql"
+	"github.com/stretchr/testify/require"
+	"github.com/testcontainers/testcontainers-go"
+	tcpostgres "github.com/testcontainers/testcontainers-go/modules/postgres"
+	"github.com/testcontainers/testcontainers-go/wait"
 )
 
 func preCheckEnvSetting(t *testing.T) string {

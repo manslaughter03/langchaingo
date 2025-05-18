@@ -3,8 +3,8 @@ package callbacks
 import (
 	"context"
 
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/manslaughter03/langchaingo/llms"
+	"github.com/manslaughter03/langchaingo/schema"
 )
 
 // CombiningHandler is a callback handler that combine multi callbacks.

@@ -9,15 +9,15 @@ import (
 	"time"
 
 	"github.com/jackc/pgx/v5/pgxpool"
+	"github.com/manslaughter03/langchaingo/embeddings"
+	"github.com/manslaughter03/langchaingo/llms/openai"
+	"github.com/manslaughter03/langchaingo/schema"
+	"github.com/manslaughter03/langchaingo/util/alloydbutil"
+	"github.com/manslaughter03/langchaingo/vectorstores/alloydb"
 	"github.com/stretchr/testify/require"
 	"github.com/testcontainers/testcontainers-go"
 	tcpostgres "github.com/testcontainers/testcontainers-go/modules/postgres"
 	"github.com/testcontainers/testcontainers-go/wait"
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/util/alloydbutil"
-	"github.com/tmc/langchaingo/vectorstores/alloydb"
 )
 
 func preCheckEnvSetting(t *testing.T) string {

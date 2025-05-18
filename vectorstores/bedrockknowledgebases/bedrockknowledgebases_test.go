@@ -12,11 +12,11 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime"
 	runtimetypes "github.com/aws/aws-sdk-go-v2/service/bedrockagentruntime/types"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
+	"github.com/manslaughter03/langchaingo/chains"
+	"github.com/manslaughter03/langchaingo/llms"
+	"github.com/manslaughter03/langchaingo/schema"
+	"github.com/manslaughter03/langchaingo/vectorstores"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
 )
 
 type testModel struct{}

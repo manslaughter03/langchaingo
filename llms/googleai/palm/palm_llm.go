@@ -7,9 +7,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/googleai/internal/palmclient"
+	"github.com/manslaughter03/langchaingo/callbacks"
+	"github.com/manslaughter03/langchaingo/llms"
+	"github.com/manslaughter03/langchaingo/llms/googleai/internal/palmclient"
 )
 
 var (

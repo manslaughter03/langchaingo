@@ -1,9 +1,9 @@
-module github.com/tmc/langchaingo/examples/mongovector-vectorstore-example
+module github.com/manslaughter03/langchaingo/examples/mongovector-vectorstore-example
 
 go 1.23.1
 
 require (
-	github.com/tmc/langchaingo v0.1.13-pre.1
+	github.com/manslaughter03/langchaingo v0.1.13-pre.1
 	go.mongodb.org/mongo-driver/v2 v2.0.0
 )
 

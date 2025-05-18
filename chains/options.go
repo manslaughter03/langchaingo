@@ -3,8 +3,8 @@ package chains
 import (
 	"context"
 
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/llms"
+	"github.com/manslaughter03/langchaingo/callbacks"
+	"github.com/manslaughter03/langchaingo/llms"
 )
 
 // ChainCallOption is a function that can be used to modify the behavior of the Call function.

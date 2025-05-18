@@ -8,16 +8,16 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/manslaughter03/langchaingo/chains"
+	"github.com/manslaughter03/langchaingo/embeddings"
+	"github.com/manslaughter03/langchaingo/llms/openai"
+	"github.com/manslaughter03/langchaingo/schema"
+	"github.com/manslaughter03/langchaingo/vectorstores"
+	"github.com/manslaughter03/langchaingo/vectorstores/opensearch"
 	opensearchgo "github.com/opensearch-project/opensearch-go"
 	"github.com/stretchr/testify/require"
 	"github.com/testcontainers/testcontainers-go"
 	tcopensearch "github.com/testcontainers/testcontainers-go/modules/opensearch"
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
-	"github.com/tmc/langchaingo/vectorstores/opensearch"
 )
 
 func getEnvVariables(t *testing.T) (string, string, string) {

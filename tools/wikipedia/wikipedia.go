@@ -5,8 +5,8 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/tools"
+	"github.com/manslaughter03/langchaingo/callbacks"
+	"github.com/manslaughter03/langchaingo/tools"
 )
 
 const (

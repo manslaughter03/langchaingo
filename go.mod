@@ -1,4 +1,4 @@
-module github.com/tmc/langchaingo
+module github.com/manslaughter03/langchaingo
 
 go 1.22.0
 
