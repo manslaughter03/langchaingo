@@ -204,7 +204,6 @@ require (
 	github.com/aws/smithy-go v1.22.2
 	github.com/cohere-ai/tokenizer v1.1.2
 	github.com/fatih/color v1.17.0
-	github.com/gage-technologies/mistral-go v1.1.0
 	github.com/getzep/zep-go v1.0.4
 	github.com/go-openapi/strfmt v0.21.3
 	github.com/go-sql-driver/mysql v1.8.1
@@ -213,6 +212,7 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/jackc/pgx/v5 v5.7.2
 	github.com/ledongthuc/pdf v0.0.0-20220302134840-0c2507a12d80
+	github.com/manslaughter03/mistral-go v0.0.0-20250518180425-ed7fee0734d4
 	github.com/mattn/go-sqlite3 v1.14.17
 	github.com/metaphorsystems/metaphor-go v0.0.0-20230816231421-43794c04824e
 	github.com/microcosm-cc/bluemonday v1.0.26

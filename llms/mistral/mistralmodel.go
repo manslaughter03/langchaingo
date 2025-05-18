@@ -5,9 +5,9 @@ import (
 	"errors"
 	"os"
 
-	sdk "github.com/gage-technologies/mistral-go"
 	"github.com/manslaughter03/langchaingo/callbacks"
 	"github.com/manslaughter03/langchaingo/llms"
+	sdk "github.com/manslaughter03/mistral-go"
 )
 
 // Model encapsulates an instantiated Mistral client, the client options used to instantiate the client, and a callback handler provided by Langchain Go.
