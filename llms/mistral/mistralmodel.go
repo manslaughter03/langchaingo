@@ -251,11 +251,28 @@ func convertToMistralChatMessages(langchainMessages []llms.MessageContent) ([]sd
 					messages = append(messages, chatMsg)
 				}
 			case llms.ToolCallResponse:
-				chatMsg := sdk.ChatMessage{Role: string(msg.Role), Content: p.Content}
+				chatMsg := sdk.ChatMessage{
+					Role:       string(msg.Role),
+					Content:    p.Content,
+					ToolCallID: p.ToolCallID,
+					Name:       p.Name,
+				}
 				setMistralChatMessageRole(&msg, &chatMsg) // #nosec G601
 				messages = append(messages, chatMsg)
 			case llms.ToolCall:
-				chatMsg := sdk.ChatMessage{Role: string(msg.Role), ToolCalls: []sdk.ToolCall{{Id: p.ID, Type: sdk.ToolTypeFunction, Function: sdk.FunctionCall{Name: p.FunctionCall.Name, Arguments: p.FunctionCall.Arguments}}}}
+				chatMsg := sdk.ChatMessage{
+					Role: string(msg.Role),
+					ToolCalls: []sdk.ToolCall{
+						{
+							Id:   p.ID,
+							Type: sdk.ToolTypeFunction,
+							Function: sdk.FunctionCall{
+								Name:      p.FunctionCall.Name,
+								Arguments: p.FunctionCall.Arguments,
+							},
+						},
+					},
+				}
 				setMistralChatMessageRole(&msg, &chatMsg) // #nosec G601
 				messages = append(messages, chatMsg)
 			default:
